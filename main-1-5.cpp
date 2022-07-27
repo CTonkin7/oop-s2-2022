@@ -6,6 +6,6 @@ extern int count_evens(int number);
 
 int main() {
 
-    std::cout << "The number is: " << count_evens(7) << std::endl;
+    std::cout << "The number is: " << count_evens(10) << std::endl;
     return 0;
 }
