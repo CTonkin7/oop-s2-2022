@@ -19,5 +19,5 @@
     }
 
 
-    std::cout << "2:" << num2 << ";5:" << num5 << ";9:" << num9 << std::endl;
+    std::cout << "2:" << num2 << ";5:" << num5 << ";9:" << num9 << ";" << std::endl;
  }
