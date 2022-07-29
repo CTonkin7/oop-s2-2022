@@ -2,8 +2,8 @@
 #include <cmath>
 
 double array_mean(int array[], int n){
-    int sum=0;
-    int mean=0;
+    double sum=0;
+    double mean=0;
     if (n<1){
         return 0.0;
     }
