@@ -1,6 +1,6 @@
 #include <iostream>
 
-void transform( int number )
+void transform(int number)
 {
     std::cout << "Base 10 = " << number << "\n";
 
