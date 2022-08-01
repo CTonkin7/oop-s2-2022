@@ -1,22 +1,26 @@
-void show_binary( int dec )
+#include <iostream>
+
+void transform( int number )
 {
-    std::cout << "decimal = " << dec << "\n";
+    std::cout << "Base 10 = " << number << "\n";
 
     std::string bin{};
 
-    while( dec > 0 ) {
-        if( dec % 2 == 0 ) bin.insert( bin.begin( ), '0' );
-        else bin.insert( bin.begin( ), '1' );
-
-        dec >>= 1;
+    while( number > 0 ) {
+        if(number % 2 == 0){
+            bin.insert( bin.begin( ), '0' );
+        }else {
+            bin.insert( bin.begin( ), '1' );
+        }
+        number >>= 1;
     }
 
-    std::cout << "binary = " << bin << "\n";
+    std::cout << "Base 2 = " << bin << "\n";
 }
-0
+
 
 int main() {
-    int dec = 75;
-    show_binary(dec);
+    int number = 75;
+    transform(number);
     return 0;
 }
