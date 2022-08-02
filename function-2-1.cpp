@@ -1,6 +1,6 @@
 #include <iostream>
 
-void print_binary(std::string decimal_number) {
+void print_binary_str(std::string decimal_number) {
     
     int number = stoi(decimal_number);
     int binaryNum[32];
