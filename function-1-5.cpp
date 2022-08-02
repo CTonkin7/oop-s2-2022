@@ -11,6 +11,6 @@ void print_summed(int array[3][3], int array2[3][3]){
         for (int j = 0; j<3; j++){
             std::cout << summed_array[i][j] << ' ';
         }
-        std::cout << "\n" << std::endl;
+        std::cout << "" << std::endl;
     }
 }
