@@ -1,20 +1,19 @@
 #include <iostream>
 
-void print_binary(std::string decimal_number)
-{
-    int number = 0;
-    std::string bin{};
-    number = stoi(decimal_number);
-    while( number > 0 ) {
-        if(number % 2 == 0){
-            bin.insert( bin.begin( ), '0' );
-        }else {
-            bin.insert( bin.begin( ), '1' );
-        }
-        number >>= 1;
-    }
+void print_binary(std::string decimal_number) {
+    
+    int number = stoi(decimal_number);
+    int binaryNum[32];
 
-    std::cout << bin << "\n";
+    int i = 0;
+    while (number>0){
+        binaryNum[i] = number % 2;
+        number = number/2;
+        i++;
+    }
+    for (int j = i-1; j >=0; j--){
+        std::cout << binaryNum[j];
+    }
 }
 
 
