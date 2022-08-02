@@ -9,7 +9,6 @@ int sum_min_max(int integers[], int length){
     int min = array_min(integers,length);
     int max = array_max(integers,length);
     sum = min + max;
-    std::cout<< sum <<std::endl;
     return sum;
 }
 
