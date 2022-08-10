@@ -9,7 +9,7 @@ int palindrome_sum(int integers[], int length){
     if(is_array_palindrome(integers,length)!=0){
         sum = sum_integers(integers,length);
     } else {
-        return -2;
+        sum = -2;
     }
     return sum;
 }
