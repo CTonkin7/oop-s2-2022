@@ -4,7 +4,5 @@ extern int bin_to_int(int binary_digits[], int number_of_digits);
 
 int main(){
     int binary[6] = {0,1,0,0,1,1};
-    bin_to_int(binary,6);
-
-
+    std::cout<< bin_to_int(binary,6) << std::endl;
 }

@@ -43,12 +43,15 @@ bool is_array_palindrome(int integers[], int length){
 }
 
 int sum_integers(int integers[], int length){
+    
     int sum = 0;
     int result = 0;
+
     if (length<=0){
-        result = -1;
-        return result;
+        sum = -1;
+        return sum;
     }
+
     for (int i=0; i<length;i++){
         sum = sum + integers[i];
     }
