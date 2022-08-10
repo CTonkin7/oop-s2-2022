@@ -6,6 +6,12 @@ extern int sum_integers(int integers[], int length);
 
 int palindrome_sum(int integers[], int length){
     int sum = 0;
+    if(length<=0){
+        sum = -1;
+        return sum;
+    }
+
+    
     if(is_array_palindrome(integers,length)!=0){
         sum = sum_integers(integers,length);
     } else {
