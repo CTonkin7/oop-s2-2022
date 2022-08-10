@@ -21,7 +21,7 @@ bool is_array_palindrome(int integers[], int length){
         result = false;
         return result;
     }
-    if (length % 2 == 1){
+    if (length % 2 != 0){
         for (int i = 1; i<(length/2+1);i++){
             if (integers[i]<integers[i-1]){
                 return false;
