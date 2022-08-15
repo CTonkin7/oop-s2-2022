@@ -1,9 +1,8 @@
 #include <iostream>
 
-extern void printer(int array[10][10]);
+extern int size_of_variable_star_t();
 
 int main(){
-    int array[10][10] = {{1,1,1,1,1,1,1,1,1,1}, {2,2,2,2,2,2,2,2,2,2}, {3,3,3,3,3,3,3,3,3,3}, {4,4,4,4,4,4,4,4,4,4}, {5,5,5,5,5,5,5,5,5,5}, {6,6,6,6,6,6,6,6,6,6}, {7,7,7,7,7,7,7,7,7,7}, {8,8,8,8,8,8,8,8,8,8}, {9,9,9,9,9,9,9,9,9,9}, {10,10,10,10,10,10,10,10,10,10} };
-    printer(array);
-    return 0;
+    std::cout<< size_of_variable_star_t() << std::endl;
+
 }
