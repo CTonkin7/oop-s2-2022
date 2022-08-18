@@ -5,13 +5,12 @@ int max_sub_sum(int *nums,int length){
     int *ptr_array = nums;
     int index = 1;
 
-    while (index = 1){
+    for (int i=0; i<length;i++){
         if (ptr_array < 0){
             *(ptr_array+1);
         } else {
             index = 0;
         }
-        
     }
 
     for (int i=0; i<length; i++){
