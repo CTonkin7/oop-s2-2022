@@ -17,7 +17,7 @@ void multiples_of_seven(int *nums,int length){
 
     for (int i=0; i<length; i++){
         if(sevens_array[i] != 0){
-        std::cout<<sevens_array[i] << " ";
+        std::cout<<sevens_array[i] << std::endl;
         }
     }
 
