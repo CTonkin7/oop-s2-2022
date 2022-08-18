@@ -8,5 +8,11 @@ int main(){
     string first[3][2] = {{"a","b"}, {"c","d"}, {"e","f"}};
     string second[3][2];
     string_2d_copy(first,second,n);
+    for (int i=0; i<n;i++){
+        for(int j=0;j<2;j++){
+            std::cout << second[i][j] << " ";
+        }
+        std::cout<< "" << std::endl;
+    }
 
 }
