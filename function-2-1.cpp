@@ -3,7 +3,7 @@ using namespace std;
 
 void multiples_of_seven(int *nums,int length){
     int *ptr = nums;
-    int sevens_array[length] = {0};    
+    int sevens_array[length];    
     int index = 0;
 
     for (int i=0; i<length; i++){
@@ -15,10 +15,8 @@ void multiples_of_seven(int *nums,int length){
         (ptr)++;
     }
 
-    for (int i=0; i<length; i++){
-        if(sevens_array[i] != 0){
+    for (int i=0; i<index; i++){
         std::cout<<sevens_array[i] << std::endl;
-        }
     }
 
 }
