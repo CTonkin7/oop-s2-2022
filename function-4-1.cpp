@@ -16,7 +16,6 @@ int secondSmallestSum(int *numbers, int length){
         perms = perms + length - i;
     }
     int sums[perms];
-    int max_to_min[perms];
     int index = 0;
 
     for (int i=0;i<length;i++){
