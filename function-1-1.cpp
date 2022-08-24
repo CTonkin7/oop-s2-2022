@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
 void print_ascending(int *vals, int len){
     int *ptr = vals;
@@ -13,4 +14,5 @@ void print_ascending(int *vals, int len){
             break;
         }
     }
+    cout << "" << endl;
 }
