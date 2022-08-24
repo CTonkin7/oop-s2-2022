@@ -9,5 +9,6 @@ int next_match_count(int vals[], int length){
             }   
         }
     }
+    count = count +1;
     return count;
 }
