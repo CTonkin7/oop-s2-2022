@@ -10,5 +10,5 @@ int main(){
     int row3[3]={23,56,1};
     int *vals[]={row1,row2,row3};
     int *max_min = matrix_min_max(vals,nrows,ncols);
-    cout << "{" << 1 << "," << 100 << "}" << endl;
+    cout << "{" << *(max_min) << "," << *(max_min +1) << "}" << endl;
 }
