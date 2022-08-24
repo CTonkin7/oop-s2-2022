@@ -8,7 +8,7 @@ class Student{
         int ID;
         double grade;
     public:
-    Student(string s_name; int s_ID; double s_grade){
+    Student(string s_name, int s_ID, double s_grade){
         name = s_name;
         ID = s_ID;
         grade = s_grade;
@@ -17,8 +17,8 @@ class Student{
     int get_ID(){return ID;}
     double get_grade(){return grade;}
     void set_name(string new_name){name = new_name;}
-    void set_ID(int ID){ID = new_ID;}
-    void set_grade(double grade){grade = new_grade;}
+    void set_ID(int new_ID){ID = new_ID;}
+    void set_grade(double new_grade){grade = new_grade;}
     bool is_pass();
 };
 
@@ -31,9 +31,13 @@ bool Student::is_pass(){
 }
 
 int main(){
-    Student s1("caleb", 1647, 60);
+    Student s1("caleb", 1647, 60.3);
     cout << s1.get_name() << endl;
     cout << s1.get_ID() << endl;
     cout << s1.get_grade() << endl;
-    cout << s1.is_pass() << endl;
+    if (s1.is_pass()==1){
+        cout << "pass" << endl;
+    } else {
+        cout << "fail" << endl;
+    }
 }
