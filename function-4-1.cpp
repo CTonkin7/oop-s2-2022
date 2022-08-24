@@ -15,6 +15,7 @@ int* matrix_min_max(int **vals,int num_rows, int num_cols){
         }
     }
     int *max_min = new int[2];
-    max_min[2] = {max,min};
+    *max_min = max;
+    *(max_min+1) = min;
     return max_min;
 }
