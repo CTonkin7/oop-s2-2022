@@ -2,16 +2,18 @@
 
 int* matrix_min_max(int **vals,int num_rows, int num_cols){
     int **ptr = vals;
+
     int max = **ptr;
     int min = **ptr;
     for (int i=0; i< num_rows; i++){
-        for (int i=0; i< num_cols;i++){
+        for (int j=0; j< num_cols;j++){
             if (**(ptr) > max ){
                 max = **(ptr);
+                (*ptr++);
             } else if((**ptr < min)){
                 min = **(ptr); 
+                (*ptr++);
             }
-            (**ptr + 1);
         }
     }
     int *max_min = new int[2];
