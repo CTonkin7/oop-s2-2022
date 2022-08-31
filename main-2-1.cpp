@@ -1,29 +1,28 @@
 #include <iostream>
 #include <string>
 #include "Wagon.h"
-#include "Capybara.h"
 using namespace std;
 
 int main(){
 
-    Wagon Wagon1();
+    Wagon Wagon1;
 
-    Wagon caleb;
-    caleb.addCapybara();
+    Capybara caleb("caleb",18);
+    Wagon1.addCapybara(caleb);
 
-    Wagon Grady("Grady", 100);
-    Grady.addCapybara();
+    Capybara Grady("Grady", 100);
+    Wagon1.addCapybara(Grady);
 
-    Wagon Ben("Ben", 2);
-    Ben.addCapybara();
+    Capybara Ben("Ben", 2);
+    Wagon1.addCapybara(Ben);
 
-    Wagon Chris("Chris", 19);
-    Chris.addCapybara();
+    Capybara Chris("Chris", 19);
+    Wagon1.addCapybara(Chris);
 
-    Wagon James("James", 56);
-    James.addCapybara();
+    Capybara James("James", 56);
+    Wagon1.addCapybara(James);
 
-    Wagon printCapybaras();
+    Wagon1.printCapybaras();
 
     return 0;
 }
