@@ -8,4 +8,12 @@ int main(){
     cout << grady.getName() << endl;
     cout << grady.getSalary() << endl;
 
+    Person ben(3, "ben");
+    cout << ben.getName() << endl;
+    cout << ben.getSalary() << endl;
+
+    Person Alice(30000, "Alice");
+    cout << Alice.getName() << endl;
+    cout << Alice.getSalary() << endl;
+
 }
