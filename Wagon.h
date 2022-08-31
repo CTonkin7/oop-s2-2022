@@ -10,7 +10,7 @@ class Wagon{
         Capybara array[4];
         Wagon();
         bool addCapybara(Capybara newCapy);
-        void emptyWagon();
+        //void emptyWagon();
         void printCapybaras();
        
 };
