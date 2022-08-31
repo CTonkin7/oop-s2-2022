@@ -16,4 +16,8 @@ int main(){
     cout << Alice.getName() << endl;
     cout << Alice.getSalary() << endl;
 
+    Person Calvin(50000, "Calvin");
+    cout << Calvin.getName() << endl;
+    cout << Calvin.getSalary() << endl;
+
 }
