@@ -1,3 +1,6 @@
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
+
 #include <iostream>
 #include <string>
 #include "Person.h"
@@ -17,3 +20,5 @@ class Airplane{
         void printDetails(); 
 
 };
+
+#endif
