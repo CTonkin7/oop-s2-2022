@@ -18,7 +18,7 @@ bool Wagon::addCapybara(Capybara newCapy){
     }
 }
 
-void emptyWagon(){
+void Wagon::emptyWagon(){
     index = 0;
 }
 
