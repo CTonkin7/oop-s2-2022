@@ -4,6 +4,10 @@
 
 using namespace std;
 
+Person::Person(){
+    myName = "";
+    mySalary = 0;
+}
 Person::Person(int mySalary, string myName){
     this->myName = myName;
     this->mySalary = mySalary;

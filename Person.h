@@ -8,7 +8,7 @@ class Person{
         int mySalary;
         
         Person(int mySalary, string myName);
-
+        Person();
         void setName(string myName);
         string getName();
         void setSalary(int mySalary);

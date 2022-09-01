@@ -4,12 +4,15 @@
 using namespace std;
 
 int main(){
-    Airplane Airplane1;
+    Person thePilot1(1000, "James");
+    Person thePilot2(100, "David");
+    Person thePilot3(10000, "Grady");
 
-    Person thePilot(1000, "James")
-    Person theCoPilot(100, "David")
+    Airplane Airplane1("Maverick",thePilot1,thePilot2);
+    Airplane1.printDetails();
 
-    Airplane1.Airplane("Maverick", thePilot.getName(),theCopilot.getName());
+    Airplane1.setPilot(thePilot3);
+    Airplane1.setCoPilot(thePilot1);
 
-
+    Airplane1.printDetails();
 }
