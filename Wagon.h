@@ -9,6 +9,7 @@ class Wagon{
         int index = 0;
         Capybara array[4];
         Wagon();
+        void emptyWagon();
         bool addCapybara(Capybara newCapy);
         void printCapybaras();
        
