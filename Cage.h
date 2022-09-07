@@ -1,3 +1,7 @@
+#ifndef CAGE_H
+#define CAGE_H
+
+
 #include <iostream>
 #include <string>
 
@@ -17,3 +21,5 @@ class Cage{
 
 
 };
+
+#endif
