@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Cage.cpp"
+#include "Cage.h"
 using namespace std;
 
 int main(){
