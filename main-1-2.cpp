@@ -16,9 +16,7 @@ int main(){
 
     Clinic get_number_of_cages();
 
-    Cage get_cages();
-    
-    
+    Cage get_cages();    
 
 }
 
