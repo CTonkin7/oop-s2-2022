@@ -1,3 +1,7 @@
+#ifndef CAGE_H
+#define CAGE_H
+
+
 #include <iostream>
 #include <string>
 #include "Clinic.h"
@@ -6,8 +10,8 @@
 using namespace std;
 
 Clinic::Clinic(){
-    name = "";
-    max_size = 0;
+    index = 0;
+    Cage array[5];
 }
 
 Clinic::Clinic(std::string name, int max_size){
@@ -23,11 +27,8 @@ string Clinic::get_name(){
     return name;
 }
 
-Cage *get_cages(){
-    for (int i=0;i<index;i++){
-        cout << array[i].get_name << array[i].get_IDnum << endl;
-    }
-    return 0;
+Cage * get_cages(){
+    return array;
 }
 
 bool Clinic::add_cage(Cage new_cage){
@@ -41,3 +42,5 @@ bool Clinic::add_cage(Cage new_cage){
     }
 }
 
+
+#endif
