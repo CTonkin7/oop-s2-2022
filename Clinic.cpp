@@ -1,7 +1,3 @@
-#ifndef CAGE_H
-#define CAGE_H
-
-
 #include <iostream>
 #include <string>
 #include "Clinic.h"
@@ -42,5 +38,3 @@ bool Clinic::add_cage(Cage new_cage){
     }
 }
 
-
-#endif

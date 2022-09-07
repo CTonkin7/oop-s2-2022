@@ -1,3 +1,6 @@
+#ifndef CLINIC_H
+#define ClINIC_H
+
 #include <iostream>
 #include <string>
 #include "Cage.h"
@@ -22,3 +25,5 @@ class Clinic{
     //~Clinic();
 
 };
+
+#endif

@@ -6,9 +6,10 @@ using namespace std;
 
 int main(){
     Clinic Clinic1("vet", 5);
-    Cage Cage1("blake", 123);
-    Cage Cage2("blake", 123);
-    Cage Cage3("blake", 123);
+    
+    Cage Cage1("blake", 2345);
+    Cage Cage2("Jack", 3245);
+    Cage Cage3("Harley", 7488);
 
     Clinic add_cage(Cage Cage1); 
     Clinic add_cage(Cage Cage2); 
