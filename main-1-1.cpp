@@ -9,7 +9,7 @@ int main(){
     cout << musician1.get_instrument() << endl;
     cout << musician1.get_experience() << endl;
 
-    Musician musician2();
+    Musician musician2;
 
     cout << musician2.get_instrument() << endl;
     cout << musician2.get_experience() << endl;
