@@ -1,23 +1,19 @@
 #include <iostream>
 #include <string>
-#include "function.h"
+#include "Cage.h"
 using namespace std;
-    
+
 int main(){
-    Musician musician1("violin", 3);
+    Cage animal1("ted",98);
+    cout << animal1.get_name() << endl;
+    cout << animal1.get_IDnum() << endl;
 
-    cout << musician1.get_instrument() << endl;
-    cout << musician1.get_experience() << endl;
+    Cage animal2("jack",42828);
+    cout << animal2.get_name() << endl;
+    cout << animal2.get_IDnum() << endl;
 
-    Musician musician2;
-
-    cout << musician2.get_instrument() << endl;
-    cout << musician2.get_experience() << endl;
-
-    Musician musician3("guitar", 10);
-
-    cout << musician3.get_instrument() << endl;
-    cout << musician3.get_experience() << endl;
-
+    Cage animal3("alice",495);
+    cout << animal3.get_name() << endl;
+    cout << animal3.get_IDnum() << endl;
 
 }
