@@ -19,7 +19,8 @@ int main(){
 
     Clinic1.get_number_of_cages();
 
-    Clinic1.get_cages();    
+    Clinic1.get_cages();  
+      
 
 }
 

@@ -23,7 +23,7 @@ string Clinic::get_name(){
     return name;
 }
 
-Cage * get_cages(){
+Cage * Clinic::get_cages(){
     return array;
 }
 
@@ -38,7 +38,7 @@ bool Clinic::add_cage(Cage new_cage){
     }
 }
 
-~Clinic(){
-    delete[] array;
+Clinic::~Clinic(){
+//    delete[] array;
 }
 
