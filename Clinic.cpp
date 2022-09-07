@@ -23,9 +23,9 @@ string Clinic::get_name(){
     return name;
 }
 
-Cage * get_cages(){
-    return array;
-}
+//Cage * get_cages(){
+  //  return array;
+//}
 
 bool Clinic::add_cage(Cage new_cage){
     if (number_cages < max_size){
@@ -36,5 +36,9 @@ bool Clinic::add_cage(Cage new_cage){
     } else {
         return false;
     }
+}
+
+~Clinic(){
+    delete[] array;
 }
 
