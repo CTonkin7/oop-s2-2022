@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Clinic.h"
+#include <array>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ int Clinic::get_number_of_cages(){
     return number_cages;
 }
 
-string Clinic:: get_name(){
+string Clinic::get_name(){
     return name;
 }
 
@@ -26,7 +27,7 @@ Cage *get_cages(){
     return array;
 }
 
-bool add_cage(Cage new_cage){
+bool Clinic::add_cage(Cage new_cage){
     if (number_cages < max_size){
         array[index] = new_cage;
         index++;
@@ -36,3 +37,4 @@ bool add_cage(Cage new_cage){
         return false;
     }
 }
+

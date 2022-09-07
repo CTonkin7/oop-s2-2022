@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <array>
 #include "Clinic.h"
 using namespace std;
 
@@ -9,11 +10,15 @@ int main(){
     Cage Cage2("blake", 123);
     Cage Cage3("blake", 123);
 
-    add_cage(Cage Cage1); 
-    add_cage(Cage Cage2); 
-    add_cage(Cage Cage3); 
+    Clinic add_cage(Cage Cage1); 
+    Clinic add_cage(Cage Cage2); 
+    Clinic add_cage(Cage Cage3); 
 
-    get_cages();
+    Clinic get_number_of_cages();
+
+    Cage get_cages();
+    
+    
 
 }
 

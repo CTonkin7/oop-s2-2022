@@ -6,7 +6,7 @@ using namespace std;
 
 class Clinic{
     private:
-    int name;
+    string name;
     int max_size;
     int number_cages;
     int index = 0;
