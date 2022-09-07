@@ -11,7 +11,7 @@ class Clinic{
     private:
     string name;
     int max_size;
-    int number_cages;
+    int number_cages=0;
     int index = 0;
     Cage array[5];
 
