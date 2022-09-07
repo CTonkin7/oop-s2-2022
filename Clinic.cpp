@@ -23,7 +23,7 @@ string Clinic::get_name(){
     return name;
 }
 
-Cage *get_cages(){
+Cage get_cages(){
     return array;
 }
 
