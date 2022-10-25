@@ -3,6 +3,11 @@
 #include "hunter.h"
 using namespace std;
 
+hunter::hunter(){
+    name = "";
+    volume = 0;
+    kills = 0;
+}
 hunter::hunter(string n, int v){
     name = n;
     volume = v;
@@ -11,8 +16,14 @@ hunter::hunter(string n, int v){
 void hunter::set_kills(int inputKills){
     kills = inputKills;
 }
-string hunger::get_name(){
-    return cout << "Hunter: " << name;
+void hunter::set_name(string n){
+    name = n;
+}
+void hunter::get_name(){
+    cout << "Hunter: " << name;
 }
 
-hunter::nextID = 1000;
+int hunter::get_kills(){
+    return kills;
+}
+

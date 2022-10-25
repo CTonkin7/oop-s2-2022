@@ -1,18 +1,26 @@
+#ifndef VEGIE_H
+#define VEGIE_H
+
+
 #include <iostream>
 #include <string>
+#include "animal.h"
 
 using namespace std;
 
-class vegie: public animal{
-    public:
-    vegie(string n,int v);
-    string favourite_food = 'grass';
-    string get_name();
-    
-    string get_favourite_food();
-    void set_favourite_food(string food);
-
+class vegie: protected animal{
     private:
-    static int nextID = nextID + 1;
+    static int nextID;
+    
+    public:
+        vegie();
+        vegie(string n, int v);
+        string favourite_food;
+        void set_name(string n);
+        void get_name();
+        string get_favourite_food();
+        void set_favourite_food(string food);
+    
+};
 
-}
+#endif

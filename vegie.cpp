@@ -1,22 +1,27 @@
 #include <iostream>
 #include <string>
 #include "vegie.h"
+
 using namespace std;
 
+
+vegie::vegie(){
+    name = "";
+    volume = 0;
+    favourite_food = "";
+}
 vegie::vegie(string n,int v){
     name = n;
     volume = v;
 }
 
-vegie::nextID = 100;
-
-string vegie::get_name(){
-    return cout << "Safe: " << name;
+void vegie::set_name(string inputName){
+    name = inputName;
 }
 
-string vegie:: get_favourite_food(){
+string vegie::get_favourite_food(){
     return favourite_food;
 }
-void vegie:: set_favourite_food(string food){
+void vegie::set_favourite_food(string food){
     favourite_food = food;
 }

@@ -1,15 +1,23 @@
+#ifndef HUNTER_H
+#define HUNTER_H
+
 #include <iostream>
 #include <string>
+#include "animal.h"
 using namespace std;
 
 class hunter: public animal{
     public:
+    hunter();
     hunter(string n, int v);
-    int kills = 0;
-    int get_kills;
+    int kills;
+    int get_kills();
     void set_kills(int inputKills);
-    string get_name();
+    void set_name(string n);
+    void get_name();
 
     private:
-    static int nextID = nextID + 1;
+    static int nextID;
 };
+
+#endif
