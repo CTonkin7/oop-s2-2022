@@ -25,3 +25,8 @@ string vegie::get_favourite_food(){
 void vegie::set_favourite_food(string food){
     favourite_food = food;
 }
+
+void vegie::get_name(){
+    cout << "Safe:" << name << endl;
+}
+

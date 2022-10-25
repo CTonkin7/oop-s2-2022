@@ -1,14 +1,13 @@
 #ifndef VEGIE_H
 #define VEGIE_H
 
-
 #include <iostream>
 #include <string>
 #include "animal.h"
 
 using namespace std;
 
-class vegie: protected animal{
+class vegie: public animal{
     private:
     static int nextID;
     
