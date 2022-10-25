@@ -2,6 +2,7 @@
 #include <string>
 #include "animal.h"
 #include "hunter.h"
+#include "zoo.h"
 using namespace std;
 
 int main(){
@@ -15,5 +16,14 @@ int main(){
     cout << "\n";
     Lion.set_volume(50);
     cout << Lion.get_volume() << endl;
+
+    int index = 0;
+    zoo zoo1("blah", 5, 8);
+    index = zoo1.get_number_of_animals();
+    cout << index;
+    cout << zoo1.get_animals() <<endl;
+
+
+
     return 0;
 }
