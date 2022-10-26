@@ -17,7 +17,6 @@ int main(){
     Lion.set_volume(50);
     cout << Lion.get_volume() << endl;
 
-    int index = 0;
     zoo zoo1("blah", 5, 8);
     index = zoo1.get_number_of_animals();
     cout << index;
