@@ -4,6 +4,6 @@
 
 using namespace std;
 
-void addEmployee(Employee *employee);
-    Employee **get_employees()
-    int get_count() 
+void Shop::addEmployee(Employee *employee);
+Employee **get_employees()
+int Shop::get_count() 

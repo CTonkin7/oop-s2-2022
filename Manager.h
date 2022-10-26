@@ -8,8 +8,8 @@ class Manager: public Employee{
     public:
         Manager();          
         Manager(int inputPay);
-        float hoursWorked;                     
-        int daysWorked;
+        float hoursWorked = 0;                    
+        int daysWorked = 0;
 
         void set_hoursWorked(float hours);
         float get_hoursWorked();
