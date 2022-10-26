@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Employee.h"
+//#include "Employee.h"
 #include "Casual.h"
 #include "Manager.h"
 
