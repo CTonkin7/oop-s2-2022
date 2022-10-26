@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include "Casual.h"
+#include "Manager.h"
 
 using namespace std;
 
