@@ -50,6 +50,9 @@ float Manager::pay(){
     
     float pay;
     pay = 8*daysWorked*payRate;
+    if (daysWorked < 1 && hoursWorked < 8){
+        pay = 0;
+    }
     
     daysWorked = 0;
     hoursWorked = 0;
