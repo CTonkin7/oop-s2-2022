@@ -30,18 +30,19 @@ int Manager::get_daysWorked(){
 
 void Manager::work(int mins){
     hoursWorked = hoursWorked + mins/60;
-    if(hoursWorked == 8){
-        daysWorked++;
-        hoursWorked = 0;
-        energyLevel = 100;
-    }
+    
     for (int i=0; i<mins;i++){
         energyLevel = energyLevel - 0.25;
     }
     if(energyLevel < 0){
         energyLevel = 0;
     }
+    if(hoursWorked == 8){
+        daysWorked++;
+        hoursWorked = 0;
+        energyLevel = 100;
     }
+}
     
 
 
