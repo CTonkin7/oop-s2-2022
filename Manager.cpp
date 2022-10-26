@@ -30,16 +30,20 @@ int Manager::get_daysWorked(){
 
 void Manager::work(int mins){
     hoursWorked = hoursWorked + mins/60;
-    for (int i=0; i<mins;i++){
-        if (energyLevel - 0.25 > 0){
-            energyLevel = energyLevel - 0.25;
-        }
-    }
     if(hoursWorked == 8){
         daysWorked++;
         hoursWorked = 0;
+        energyLevel = 100;
     }
-}
+    for (int i=0; i<mins;i++){
+        energyLevel = energyLevel - 0.25;
+    }
+    if(energyLevel < 0){
+        energyLevel = 0;
+    }
+    }
+    
+
 
 float Manager::pay(){
     float pay;
