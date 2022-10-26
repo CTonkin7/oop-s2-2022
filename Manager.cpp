@@ -34,10 +34,10 @@ void Manager::work(int mins){
     for (int i=0; i<mins;i++){
         energyLevel = energyLevel - 0.25;
     }
-    if(energyLevel < 0){
+    if (energyLevel < 0){
         energyLevel = 0;
     }
-    if(hoursWorked == 8){
+    if (hoursWorked == 8){
         daysWorked++;
         hoursWorked = 0;
         energyLevel = 100;
