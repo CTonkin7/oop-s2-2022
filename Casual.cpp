@@ -32,7 +32,7 @@ void Casual::work(int mins){
             energyLevel = energyLevel - 0.5;
         }
     }
-    if (dayCount >= 0 && dayCount <= 4){
+    if ((dayCount >= 0) && (dayCount <= 4)){
         hoursWorked[dayCount] = (mins/60);
     } else {
         hoursWorked[dayCount] = 2*(mins/60);
@@ -42,7 +42,7 @@ void Casual::work(int mins){
 float Casual::pay(){
     float pay = 0;
     int hours = 0;
-    for (int i=0; i<dayCount;i++){
+    for (int i=0; i<7;i++){
         hours = hours + (hoursWorked[i]);
     }
     pay = hours*payRate;
